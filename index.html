@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caleb Vincent</title>
+  <title>Happy Birthday</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    HAPPY 1ST BIRTHDAY BABY BOSS CALEB VINCENT CATAINA MACADAT
+  <!-- Music -->
+  <audio class="song" loop>
+    <source src="music.mp3" type="audio/mp3">
+    Your browser doesn't support audio.
+  </audio>
+
+  <!-- Confetti -->
+  <canvas id="confetti"></canvas>
+
+  <!-- Play Button -->
+  <div class="loader">
+    <button id="play" class="btn-play">🎂 CLICK TO CELEBRATE 🎶</button>
+  </div>
+
+  <!-- Content -->
+  <div class="main">
+    <div class="container pt-5">
+      <div class="row justify-content-center text-center">
+
+        <!-- Banner -->
+        <div class="col-12 col-xl-6 banner">
+          <img src="img/banner.png" alt="Happy Birthday Banner">
+        </div>
+
+        <!-- Name -->
+        <div class="col-12">
+          <div id="name" class="area">CALEB VINCENT</div>
+        </div>
+
+        <!-- Typing Text -->
+        <div class="col-12">
+          <div class="type-wrap">
+            <div id="typed-strings" class="typing">
+              <h2>Happy Birthday <i id="nae">CALEB VINCENT</i></h2>
+              <h2>Have a wonderful day</h2>
+              <h2>Filled with joy and happiness.</h2>
+            </div>
+            <span id="typed" style="white-space:pre;"></span>
+          </div>
+        </div>
+
+        <!-- Cake -->
+        <div class="col-12 cake">
+          <img src="img/cake.png" alt="Birthday Cake">
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Balloon Border -->
+    <img src="img/Balloon-Border.png" class="balloon-border" alt="Balloon Border">
+  </div>
+
+  <!-- JS Scripts -->
+  <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/typed.min.js"></script>
+  <script src="js/confetti.js"></script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
