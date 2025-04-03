@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'Boss Baby';
+    src: url('./fonts/Boss\ Baby.otf') format('opentype');
+}
+
+body {
+    background-color: #e0f7ff;
+    font-family: 'Boss Baby', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #e0f7ff;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-play {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #1565C0;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    animation: pulse 1.5s infinite;
+    box-shadow: 0 0 10px #1565C0;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    display: none;
+}
+
+.main .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 450px;
+    object-fit: contain;
+    background: transparent;
+}
+
+.area {
+    text-align: center;
+    font-size: 60px;
+    color: #00265e;
+    font-weight: 700;
+    text-transform: uppercase;
+    animation: spin 2s ease-out infinite;
+    text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+
+#nae {
+    text-transform: capitalize;
+}
+
+.type-wrap {
+    text-align: center;
+    font-size: 25px;
+    color: #1565C0;
+}
+
+.cake {
+    display: flex;
+    justify-content: center;
+}
+
+.cake img {
+    width: 280px;
+    max-width: 90%;
+    object-fit: contain;
+    background: transparent;
+}
+
+.balloon-border {
+    position: fixed;
+    bottom: -100px;
+    width: 100%;
+    opacity: 0.6;
+    z-index: 999;
+}
+
+#confetti {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+
+@keyframes spin {
+    0% { transform: rotateZ(0); }
+    25% { transform: rotateZ(10deg); }
+    50% { transform: rotateZ(0deg); }
+    75% { transform: rotateZ(-10deg); }
+}
+
+@media (max-width: 500px) {
+    .area {
+        font-size: 40px;
+        letter-spacing: -3px;
+    }
+    .type-wrap {
+        font-size: 18px;
+    }
+}
